@@ -11,6 +11,6 @@ router.get('/', protect, getUserProfile);
 // Route to update the user profile
 // PUT /api/users/profile
 // This route is protected and requires authentication
-router.put('/updateProfile', protect, updateUserProfile);
+router.put('/updateProfile', updateUserProfile);
 
 module.exports = router;

@@ -6,6 +6,7 @@ const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         // Determine upload directory based on the file fieldname
         let uploadPath = '';
+        console.log("Storage destination function called.");
 
         if (file.fieldname === 'noteFile') {
             uploadPath = 'uploads/notes/';
